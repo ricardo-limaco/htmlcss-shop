@@ -5,35 +5,27 @@
 }
 
 /*******************************************************************************/
-img {
-    
-}
-
-
-
-/*******************************************************************************/
 .container {
-    background-color: rgb(70, 153, 102);
+    /*border: 2px solid rgb(70, 153, 102);*/
     width: 920px;
     margin: 0 auto;
     padding: 20px 0px;
 }
 
 .product {
-    background-color: rgb(53, 53, 53);
+    /*border: 2px solid rgb(53, 53, 53);*/
     min-height: 250px;
 }
 
 .card {
-    width: calc(100% / 3 - 13px);
-    background-color: red;
+    width: calc(100% / 3);
+    /*border: 2px solid red;*/
     position: relative;
     display: inline-block;
     margin-bottom: 10px;
 }
 
-
-
+/* Img */
 .card img {
     width: 100%;
 }
@@ -45,17 +37,77 @@ img {
     display: none;
 }
 
-
 .card:hover .over {
     display: block;
 }
 
+/* Heath */
+.card-heart {
+    background-color: white;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    z-index: 5;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+}
 
+/* Patch */
+.card-patch {
+    display: inline-block;
+    position: absolute;
+    top: 398px;
+    left: 0px;
+    
+}
 
+.card-title {
+    display: inline-block;
+    background-color: #eb0037;
+    color: white;
+    font-family: 'Besley', serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 5px;
+}
+
+.card-title.green {
+    background-color: #00875a;
+}
+/* Brand */
+.card-name-brand {
+    font-family: 'Besley', serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Name product */
+.card-name-product {
+    font-family: 'Besley', serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Price */
+.card-price {
+    display: inline;
+    font-family: 'Besley', serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: line-through;
+
+}
+
+.card-price.sale {
+    color: #ff0000;
+    font-weight: 700;
+    text-decoration: none;
+}
 /*******************************************************************************/
 /* font,sostenibilità,sconto,prezzo */
 .dati {
-    font-family: 'Besley', serif;
     color: #00875a;
     color: #eb0037;
     color: #ff0000;
