@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*******************************************************************************/
+img {
+    
+}
+
+
+
+/*******************************************************************************/
+.container {
+    background-color: rgb(70, 153, 102);
+    width: 920px;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+
+.product {
+    background-color: rgb(53, 53, 53);
+    min-height: 250px;
+}
+
+.card {
+    width: calc(100% / 3 - 13px);
+    background-color: red;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+
+
+.card img {
+    width: 100%;
+}
+
+.card .over{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+
+.card:hover .over {
+    display: block;
+}
+
+
+
+/*******************************************************************************/
+/* font,sostenibilità,sconto,prezzo */
+.dati {
+    font-family: 'Besley', serif;
+    color: #00875a;
+    color: #eb0037;
+    color: #ff0000;
+}
