@@ -18,14 +18,15 @@
 }
 
 .card {
-    width: calc(100% / 3);
     /*border: 2px solid red;*/
+    width: 33%;
     position: relative;
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
 }
 
-/* Img */
+/* Image */
 .card img {
     width: 100%;
 }
@@ -47,11 +48,22 @@
     position: absolute;
     top: 15px;
     right: 0;
-    z-index: 5;
     border: none;
     width: 40px;
     height: 40px;
     font-size: 18px;
+    cursor: pointer;
+}
+
+.card-heart:focus{
+    color: #ff6900;
+}
+
+/* Text-font */
+.text-font {
+    font-family: 'Besley', serif;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 /* Patch */
@@ -59,56 +71,36 @@
     display: inline-block;
     position: absolute;
     top: 398px;
-    left: 0px;
-    
+    left: 0px; 
 }
 
 .card-title {
     display: inline-block;
     background-color: #eb0037;
     color: white;
-    font-family: 'Besley', serif;
-    font-size: 12px;
-    font-weight: 500;
     padding: 5px 5px;
 }
 
 .card-title.green {
     background-color: #00875a;
 }
+
 /* Brand */
-.card-name-brand {
-    font-family: 'Besley', serif;
-    font-size: 12px;
-    font-weight: 500;
-}
 
 /* Name product */
 .card-name-product {
-    font-family: 'Besley', serif;
     font-size: 14px;
     font-weight: 700;
 }
 
 /* Price */
 .card-price {
-    display: inline;
-    font-family: 'Besley', serif;
-    font-size: 12px;
-    font-weight: 500;
+    display: inline-block;
     text-decoration: line-through;
-
 }
 
 .card-price.sale {
     color: #ff0000;
     font-weight: 700;
     text-decoration: none;
-}
-/*******************************************************************************/
-/* font,sostenibilità,sconto,prezzo */
-.dati {
-    color: #00875a;
-    color: #eb0037;
-    color: #ff0000;
 }
